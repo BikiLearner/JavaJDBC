@@ -1,0 +1,43 @@
+
+//        String uname="root";
+//        String password="Biki12#23";
+//        String query="select * from employee";
+//        String insertQuery="INSERT INTO employee values(?,?,?,?,?)";
+//        String selectQuery="select  First_name from employee where emp_id=?";
+//        try {
+////            Class.forName("com.mysql.cj.jdbc.Driver"); // this is unnecessary now as it will load automatically
+//
+//
+//            //use this if you don't know the value and do not want to use sting append
+////            PreparedStatement preparedStatement= con.prepareStatement(query);
+////            preparedStatement.setInt(1,2);
+////            preparedStatement.setString(2,"Mota");
+////            preparedStatement.setString(3,"Vai");
+////            preparedStatement.setBigDecimal(4, BigDecimal.valueOf(25.56));
+////            preparedStatement.setDate(5, Date.valueOf(LocalDate.now()));
+//
+//            //Insert values
+//            int count=preparedStatement.executeUpdate();
+//            if(count>0){
+//                System.out.println("Value inserted successfully ");
+//            }
+//            ResultSet resultSet1=preparedStatement.executeQuery();
+//            resultSet1.next();
+//            System.out.println(resultSet1.getString("First_name"));
+//
+//            ResultSet resultSet=statement.executeQuery(query);
+//            while (resultSet.next()){
+//                System.out.println(
+//                        resultSet.getString("emp_id") + " " +
+//                        resultSet.getString("First_name") + " " +
+//                        resultSet.getString("Last_name") + " " +
+//                        resultSet.getBigDecimal("hourly_pay") + " " +
+//                        resultSet.getDate("hire_date") + " "
+//
+//                );
+//            }
+//            statement.close();
+//            con.close();
+//        } catch (/*ClassNotFoundException |*/ SQLException e) {
+//            System.err.println("MySQL JDBC Driver not found. = " + e);
+//        }
